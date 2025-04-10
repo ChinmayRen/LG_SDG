@@ -11,7 +11,7 @@ from functools import partial
 from .location_scale_augmentation import LocationScaleAugmentation
 hostname = platform.node()
 # folder for datasets
-BASEDIR = '/l/users/20020135/data/cardiac/processed'
+BASEDIR = 'ChinmayRen/LG_SDG/SLAug/data/cardiac/processed'
 print(f'Running on machine {hostname}, using dataset from {BASEDIR}')
 LABEL_NAME = ["bg", "Myocardium",  "Lventricle","Rventricle"]
 from dataloaders.niftiio import read_nii_bysitk
