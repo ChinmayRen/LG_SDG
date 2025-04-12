@@ -12,7 +12,7 @@ import itertools
 from .location_scale_augmentation import LocationScaleAugmentation
 hostname = platform.node()
 # folder for datasets
-BASEDIR = 'ChinmayRen/LG_SDG/SLAug/data/abdominal'
+BASEDIR = '/kaggle/working/LG_SDG/SLAug/data/abdominal'
 print(f'Running on machine {hostname}, using dataset from {BASEDIR}')
 LABEL_NAME = ["bg", "liver", "rk", "lk", "spleen"]
 

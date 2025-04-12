@@ -171,7 +171,7 @@ def train_one_epoch_SBF(model: torch.nn.Module, criterion: torch.nn.Module,
     visual_freq = 500
 
    
-    slaug_textfeat = torch.load("ChinmayRen/LG_SDG/text_features/abdominal_textembeddings.pt")
+    slaug_textfeat = torch.load("/kaggle/working/LG_SDG/text_features/abdominal_textembeddings.pt")
     for i, samples in enumerate(metric_logger.log_every(data_loader, print_freq, header)):
         for k, v in samples.items():
             if isinstance(samples[k], torch.Tensor):
